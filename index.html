@@ -3,6 +3,22 @@
   <head>
     <title>The Gallery of Horns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <script class="photo-template" type="text/x-tmpl-mustache">
+      <div class = "{{keyword}} div">
+        <h2>{{title}}</h2>
+        <img src="{{image}}" alt="">
+        <p>{{description}}</p>
+      </div>
+    </script>
+    <script class="page2-template" type="text/x-tmpl-mustache">
+      <div class = "{{keyword1}} div">
+        <h2>{{title1}}</h2>
+        <img src="{{image1}}" alt="">
+        <p>{{description1}}</p>
+      </div>
+    </script>
   </head>
   <body>
     <header>
@@ -10,13 +26,15 @@
       <select>
         <option value="default">Filter by Keyword</option>
       </select>
+      <button id="button1">page 1</button>
+      <button id="button2">page 2</button>
     </header>
     <main>
-      <div id="photo-template">
+      <!-- <div id="photo-template">
         <h2></h2>
         <img src="" alt="">
         <p></p>
-      </div>
+      </div> -->
     </main>
     <footer>
       &copy; 2018 Code Fellows
@@ -24,7 +42,10 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.js"></script>
       <script src="/js/app.js"></script>
+      <script src="/data/page-1.json"></script>
+      <script src="/data/page-2.json"></script>
     </footer>
   </body>
 </html>
