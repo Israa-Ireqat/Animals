@@ -1,4 +1,4 @@
-@import url('./reset.css');
+
 @import url('./layouts.css');
 @import url('./modules.css');
 
@@ -11,7 +11,7 @@ main {
 
 img {
   height: 200px;
-  width: 100%;
+  width: 200px;
 }
 
 h1 {
